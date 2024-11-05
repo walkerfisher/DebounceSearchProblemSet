@@ -1,0 +1,93 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+/* General container styling */
+.debounced-search {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: left;
+}
+
+/* Label styling */
+.debounced-search label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Input field */
+.debounced-search input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.debounced-search input[type="text"]:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Loading and error messages */
+.debounced-search p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.debounced-search p.error {
+  color: red;
+}
+
+/* Results list */
+.debounced-search ul {
+  margin-top: 16px;
+  padding: 0;
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual result item */
+.debounced-search li {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.2s ease;
+}
+
+.debounced-search li:hover {
+  background-color: #f8f8f8;
+}
+
+.debounced-search li:last-child {
+  border-bottom: none;
+}
+
+/* Movie poster thumbnail */
+.debounced-search img {
+  width: 50px;
+  height: auto;
+  margin-right: 12px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Movie title and year */
+.debounced-search span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
